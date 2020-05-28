@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-05-2020 a las 02:08:15
+-- Tiempo de generación: 28-05-2020 a las 04:14:02
 -- Versión del servidor: 10.4.8-MariaDB
 -- Versión de PHP: 7.3.11
 
@@ -25,13 +25,23 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `plan`
+-- Estructura de tabla para la tabla `planes`
 --
 
 CREATE TABLE `plan` (
   `id_plan` int(10) NOT NULL,
-  `hotel` varchar(40) NOT NULL
+  `hotel` varchar(40) NOT NULL,
+  `id_viaje` int(11) NOT NULL,
+  `direccion` varchar(100) NOT NULL,
+  `ciudad` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `plan`
+--
+
+INSERT INTO `plan` (`id_plan`, `hotel`, `id_viaje`, `direccion`, `ciudad`) VALUES
+(1, 'CopaSul Hotel', 3, 'Av. Nossa Sra. de Copacabana, 1284', 'Rio de janeiro');
 
 --
 -- Índices para tablas volcadas
@@ -51,7 +61,7 @@ ALTER TABLE `plan`
 -- AUTO_INCREMENT de la tabla `plan`
 --
 ALTER TABLE `plan`
-  MODIFY `id_plan` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_plan` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
