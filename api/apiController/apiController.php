@@ -24,5 +24,20 @@ class apiController extends api{
       }
     }
     
-
+    function getKmRecorridos($param=null){
+      if(isset($param)){
+       $id_viaje=$param[0];
+        $arreglo=$this->model->GetKmRecorridos($id_viaje);
+        $data=$arreglo;
+      }
+      else{
+        $data=$this->model->GetKmRecorridosGral();
+      }
+      if (isset($data)){
+           return $this->jsonResponse($data,200);
+      }
+      else{
+        return $this->jsonResponse(null,404);
+      }
+    }
      ?>

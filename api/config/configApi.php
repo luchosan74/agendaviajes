@@ -7,7 +7,7 @@ class configApi
     public static $RESOURCES = [
      
       'viaje#GET'=>   'apiController#getViaje',     
-     
+      'kmRecorridos#GET'=> 'apiController#GetKmRecorridos',
     
 
 

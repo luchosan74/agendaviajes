@@ -25,7 +25,16 @@ class tablaModel{
     $sentencia->execute(array($id_usuario));
     return $sentencia->fetchAll(PDO::FETCH_ASSOC);
   }
-
+  function GetKmRecorridos($id_viaje){
+    $sentencia = $this->db->prepare( "SELECT SUM(kmRecorridos) FROM estadistica WHERE id_viaje=?");
+    $sentencia->execute(array($id_viaje));
+    return $sentencia->fetchAll(PDO::FETCH_ASSOC);
+  }
+  function GetKmRecorridosGral(){
+    $sentencia = $this->db->prepare( "SELECT SUM(kmRecorridos) FROM estadistica");
+    $sentencia->execute();
+    return $sentencia->fetchAll(PDO::FETCH_ASSOC);
+  }
  
 
  
