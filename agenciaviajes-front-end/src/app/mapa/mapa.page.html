@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Puntos de Viaje</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ folder }}</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+
+<ion-content>
+  
+  
+  <div id="map" style="width: 100vw; height: 70vw;"></div>
+  <div id="menu">
+      <input
+          id="streets-v11"
+          type="radio"
+          name="rtoggle"
+          value="streets"
+          checked="checked"
+      />
+      <label for="streets-v11">streets</label>
+      <input id="light-v10" type="radio" name="rtoggle" value="light" />
+      <label for="light-v10">light</label>
+      <input id="dark-v10" type="radio" name="rtoggle" value="dark" />
+      <label for="dark-v10">dark</label>
+      <input id="outdoors-v11" type="radio" name="rtoggle" value="outdoors" />
+      <label for="outdoors-v11">outdoors</label>
+      <input id="satellite-v9" type="radio" name="rtoggle" value="satellite" />
+      <label for="satellite-v9">satellite</label>
+  </div>
+  
+  
+</ion-content>
