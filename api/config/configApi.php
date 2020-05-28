@@ -8,7 +8,7 @@ class configApi
      
       'viaje#GET'=>   'apiController#getViaje',     
       'kmRecorridos#GET'=> 'apiController#GetKmRecorridos',
-    
+      'plan#GET'=>   'apiController#getPlan',
 
 
     ];

@@ -24,6 +24,24 @@ class apiController extends api{
       }
     }
     
+    function getPlan($param=null){
+      if(isset($param)){
+        $id_viaje=$param[0];
+        $arreglo=$this->model->getPlan($id_viaje);
+        $data=$arreglo;
+      }
+      else{
+        $data=$this->model->getPlanes();
+      }
+      if (isset($data)){
+           return $this->jsonResponse($data,200);
+      }
+      else{
+        return $this->jsonResponse(null,404);
+      }
+    }
+
+
     function getKmRecorridos($param=null){
       if(isset($param)){
        $id_viaje=$param[0];
