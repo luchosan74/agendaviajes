@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `estadistica`
+-- Estructura de tabla para la tabla `estadisticas`
 --
 
 CREATE TABLE `estadistica` (
