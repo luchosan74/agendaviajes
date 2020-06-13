@@ -22,7 +22,12 @@ export class AppComponent implements OnInit {
       url: '/mapa',
       icon: 'paper-plane'
     },
- 
+    {
+      title: 'Reservas',
+      url: '/reservas',
+      icon: 'bed'
+    },
+    
   
   
   

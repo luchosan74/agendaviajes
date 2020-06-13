@@ -24,8 +24,8 @@ export class MapaPage implements OnInit {
     map.resize();
     document.getElementById('map').style.width = '150vw';
     document.getElementById('map').style.height = '80vh';
-   document.getElementsByClassName('mapboxgl-canvas')[0].style.width = '180vw';
-    document.getElementsByClassName('mapboxgl-canvas')[0].style.height = '100vh';
+   //document.getElementsByClassName('mapboxgl-canvas')[0].style.width = '180vw';
+    //document.getElementsByClassName('mapboxgl-canvas')[0].style.height = '100vh';
     document.getElementById('resizeMap');
 
     const layerList = document.getElementById('menu');

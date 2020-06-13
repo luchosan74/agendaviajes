@@ -14,7 +14,19 @@ const routes: Routes = [
   {
     path: 'mapa',
     loadChildren: () => import('./mapa/mapa.module').then( m => m.MapaPageModule)
+  },  {
+    path: 'reservas',
+    loadChildren: () => import('./reservas/reservas.module').then( m => m.ReservasPageModule)
+  },
+  {
+    path: 'reserva',
+    loadChildren: () => import('./reserva/reserva.module').then( m => m.ReservaPageModule)
+  },
+  {
+    path: 'form-reserva',
+    loadChildren: () => import('./form-reserva/form-reserva.module').then( m => m.FormReservaPageModule)
   }
+
 ];
 
 @NgModule({
